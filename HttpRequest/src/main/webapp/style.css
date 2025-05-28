@@ -1,0 +1,30 @@
+.buttons
+{
+	align-items: center;
+	width: 100%;
+}
+div input {
+	margin-right: 10px;
+}
+form 
+{
+	width: 600px;
+}
+form input
+{
+	padding: 10px;
+}
+form label
+{
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.frm
+{
+	margin-left:100px;
+	font-weight: bold;
+	text-align: left;
+	font-family: sans-serif;
+	font-size: 14px;
+}

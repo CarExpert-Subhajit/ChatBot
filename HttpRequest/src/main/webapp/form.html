@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body
+{
+font-family:sans-serif;
+}
+*
+{
+box-sizing: border-box;
+
+}
+input[type="text"], select,textarea
+	{
+	width: 100%;
+	padding: 16px;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	}
+.container
+{
+border-radius: 5px;
+background-color: #f3f3f3;
+padding: 20px;
+width: 100%;
+}
+input[type="submit"]
+{
+background-color: #03AAAA;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+input[type="submit"]:hover
+{
+background-color: #43a045;
+}
+@media screen and (max-width:600px)
+{
+input[type="text"], select,textarea,input[type="submit"]
+{
+width: 100%;
+margin-top: 0px;
+}
+}
+</style>
+</head>
+<body>
+<h3>Contact Form</h3>
+<div class="container">
+<form action="RecData" method="post">
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="fname" placeholder="Your first name..">
+
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lname" placeholder="Your last name..">
+
+<label for="dept">Department</label>
+<select id="dept" name="dept">
+<option value="CSE">CSE</option>
+<option value="ME">ME</option>
+<option value="ECE">ECE</option>
+<option value="EE">EE</option>
+</select>
+
+<label for="subject">Subject</label>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+<input type="submit" value="submit">
+</form>
+</div>
+</body>
+</html>
